@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config transient="false" date="1357286758012">
+	<site enabled="true" updateable="true" policy="USER-EXCLUDE" url="platform:/base/">
+		<feature id="org.apache.log4j" url="features/org.apache.log4j_1.2.14.v200701080905/" version="1.2.14.v200701080905">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" url="features/org.eclipse.equinox.p2.core.feature_1.1.0.v20120524-0542-8297FncFWmE7h4Asx2cpqz-T38/" version="1.1.0.v20120524-0542-8297FncFWmE7h4Asx2cpqz-T38">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.extras.feature" url="features/org.eclipse.equinox.p2.extras.feature_1.1.0.v20120524-0542-7A6FEcDiVOTg1Q_HuZrEuBty3dqr/" version="1.1.0.v20120524-0542-7A6FEcDiVOTg1Q_HuZrEuBty3dqr">
+		</feature>
+		<feature id="com.tictactec.ta.lib" url="features/com.tictactec.ta.lib_0.4.0.R20070915/" version="0.4.0.R20070915">
+		</feature>
+		<feature id="org.eclipsetrader.yahoo" url="features/org.eclipsetrader.yahoo_1.0.0.v201301040902-7740AkF78a7QDHAaDI/" version="1.0.0.v201301040902-7740AkF78a7QDHAaDI">
+		</feature>
+		<feature id="org.mozilla.rhino" url="features/org.mozilla.rhino_1.7.3.R20110603/" version="1.7.3.R20110603">
+		</feature>
+		<feature id="org.htmlparser" url="features/org.htmlparser_1.6.0.R20060319/" version="1.6.0.R20060319">
+		</feature>
+		<feature id="org.eclipsetrader.platform" url="features/org.eclipsetrader.platform_1.0.0.v201301040902-7b9eFbCFMW_pJms8JybjPnICL1Pw/" version="1.0.0.v201301040902-7b9eFbCFMW_pJms8JybjPnICL1Pw">
+		</feature>
+		<feature id="org.eclipse.babel.nls_it" url="features/org.eclipse.babel.nls_it_4.2.0.v20121120043402/" version="4.2.0.v20121120043402">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGl9CKNP/" version="2.2.0.v20120524-0542-62DG9JXTlSiz-UbcP0w0KGl9CKNP">
+		</feature>
+		<feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_1.4.1.v20120726-050831-8R7xFOUFLWUl7MoSKV_OFXl27/" version="1.4.1.v20120726-050831-8R7xFOUFLWUl7MoSKV_OFXl27">
+		</feature>
+		<feature id="org.eclipse.rcp" url="features/org.eclipse.rcp_3.8.1.v20120814-105048-ET-92BmGJlFw3Ez0WZ9TxCqgcSVAE/" version="3.8.1.v20120814-105048-ET-92BmGJlFw3Ez0WZ9TxCqgcSVAE">
+		</feature>
+		<feature id="org.eclipsetrader.directa" url="features/org.eclipsetrader.directa_1.0.0.v201301040902-2--7w312412151A13/" version="1.0.0.v201301040902-2--7w312412151A13">
+		</feature>
+		<feature id="org.apache.commons" url="features/org.apache.commons_1.0.0.v200906221723-7A60BgJ99r9cJJEhJO/" version="1.0.0.v200906221723-7A60BgJ99r9cJJEhJO">
+		</feature>
+		<feature id="org.eclipsetrader.brokers.paper" url="features/org.eclipsetrader.brokers.paper_1.0.0.v201301040902-2--7w312412151A13/" version="1.0.0.v201301040902-2--7w312412151A13">
+		</feature>
+		<feature id="org.jdom" url="features/org.jdom_1.0.0.v200805261200/" version="1.0.0.v200805261200">
+		</feature>
+		<feature id="org.eclipsetrader.directaworld" url="features/org.eclipsetrader.directaworld_1.0.0.v201301040902-7956AoH9HdBTOHAaDI/" version="1.0.0.v201301040902-7956AoH9HdBTOHAaDI">
+		</feature>
+		<feature id="com.sun.syndication" url="features/com.sun.syndication_1.0.0.v200807162045/" version="1.0.0.v200807162045">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" url="features/org.eclipse.equinox.p2.rcp.feature_1.1.0.v20120524-0542-785EoBqNKNYz-GX2sUgCaBty3dqr/" version="1.1.0.v20120524-0542-785EoBqNKNYz-GX2sUgCaBty3dqr">
+		</feature>
+	</site>
+</config>

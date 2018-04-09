@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Export-Package: com.sun.activation.registries,com.sun.activation.viewe
+ rs,com.sun.istack,com.sun.xml.bind,com.sun.xml.bind.annotation,com.su
+ n.xml.bind.api,com.sun.xml.bind.api.impl,com.sun.xml.bind.marshaller,
+ com.sun.xml.bind.unmarshaller,com.sun.xml.bind.util,com.sun.xml.bind.
+ v2,com.sun.xml.bind.v2.bytecode,com.sun.xml.bind.v2.model.annotation,
+ com.sun.xml.bind.v2.model.core,com.sun.xml.bind.v2.model.impl,com.sun
+ .xml.bind.v2.model.nav,com.sun.xml.bind.v2.model.runtime,com.sun.xml.
+ bind.v2.runtime,com.sun.xml.bind.v2.runtime.output,com.sun.xml.bind.v
+ 2.runtime.property,com.sun.xml.bind.v2.runtime.reflect,com.sun.xml.bi
+ nd.v2.runtime.reflect.opt,com.sun.xml.bind.v2.runtime.unmarshaller,co
+ m.sun.xml.bind.v2.schemagen,com.sun.xml.bind.v2.schemagen.episode,com
+ .sun.xml.bind.v2.schemagen.xmlschema,com.sun.xml.bind.v2.util,com.sun
+ .xml.txw2,com.sun.xml.txw2.annotation,com.sun.xml.txw2.output,javax.a
+ ctivation,javax.xml.bind;version="2.1.6",javax.xml.bind.annotation;ve
+ rsion="2.1.6",javax.xml.bind.annotation.adapters;version="2.1.6",java
+ x.xml.bind.attachment;version="2.1.6",javax.xml.bind.helpers;version=
+ "2.1.6",javax.xml.bind.util;version="2.1.6",javax.xml.stream;version=
+ "2.1.6",javax.xml.stream.events;version="2.1.6",javax.xml.stream.util
+ ;version="2.1.6"
+Bundle-Vendor: EclipseTrader.org
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/activation.jar,lib/jaxb-api.jar,lib/jaxb-impl.ja
+ r,lib/jsr173_1.0_api.jar
+Bundle-Version: 2.1.6.20071219
+Bundle-Name: JAX-XML-BIND
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: javax.xml.bind
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.sun.syndication"
+      label="%featureName"
+      version="1.0.0.v200807162045"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="LICENSE">
+      %license
+   </license>
+
+   <includes
+         id="org.jdom"
+         version="1.0.0.v200805261200"/>
+
+   <requires>
+      <import feature="org.apache.commons" version="1.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="com.sun.syndication"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v200807162045"
+         unpack="false"/>
+
+   <plugin
+         id="com.sun.syndication.fetcher"
+         download-size="0"
+         install-size="0"
+         version="0.9.0.v200703071050"
+         unpack="false"/>
+
+</feature>

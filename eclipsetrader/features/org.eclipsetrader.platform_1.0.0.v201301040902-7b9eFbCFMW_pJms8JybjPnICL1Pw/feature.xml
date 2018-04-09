@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipsetrader.platform"
+      label="EclipseTrader Platform"
+      version="1.0.0.v201301040902-7b9eFbCFMW_pJms8JybjPnICL1Pw"
+      provider-name="EclipseTrader.org">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license>
+      %license
+   </license>
+
+   <url>
+      <update label="EclipseTrader Update Site" url="http://www.eclipsetrader.org/updates"/>
+      <discovery label="Sourceforge.net" url="http://eclipsetrader.sourceforge.net/updates"/>
+   </url>
+
+   <includes
+         id="org.eclipse.rcp"
+         version="3.8.1.v20120814-105048-ET-92BmGJlFw3Ez0WZ9TxCqgcSVAE"/>
+
+   <includes
+         id="org.eclipse.help"
+         version="1.4.1.v20120726-050831-8R7xFOUFLWUl7MoSKV_OFXl27"/>
+
+   <requires>
+      <import feature="org.apache.commons" version="1.0.0" match="compatible"/>
+      <import feature="org.eclipse.rcp" version="3.7.0" match="compatible"/>
+      <import feature="org.jdom" version="1.0.0" match="compatible"/>
+      <import feature="org.htmlparser" version="1.6.0" match="compatible"/>
+      <import feature="com.sun.syndication" version="1.0.0.v200807162045"/>
+      <import feature="com.tictactec.ta.lib" version="0.4.0.R20070915"/>
+      <import feature="org.mozilla.rhino" version="1.7.3" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.osgi.services"
+         download-size="0"
+         install-size="0"
+         version="3.3.100.v20120522-1822"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.update.configurator"
+         download-size="0"
+         install-size="0"
+         version="3.3.200.v20120523-1742"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.forms"
+         download-size="0"
+         install-size="0"
+         version="3.5.200.v20120521-2332"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.net"
+         download-size="0"
+         install-size="0"
+         version="1.2.200.v20120522-1148"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.net"
+         download-size="0"
+         install-size="0"
+         version="1.2.101.v20120801-152207"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.nebula.widgets.cdatetime"
+         download-size="0"
+         install-size="0"
+         version="0.14.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.nebula.widgets.pshelf"
+         download-size="0"
+         install-size="0"
+         version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security"
+         download-size="0"
+         install-size="0"
+         version="1.1.100.v20120522-1841"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.macosx"
+         os="macosx"
+         download-size="0"
+         install-size="0"
+         version="1.100.200.v20120522-2049"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.win32.x86"
+         os="win32"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="1.0.300.v20120522-2049"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.security.ui"
+         download-size="0"
+         install-size="0"
+         version="1.1.100.v20120522-2049"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.nebula.cwt"
+         download-size="0"
+         install-size="0"
+         version="0.9.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.nebula.jface.cdatetime"
+         download-size="0"
+         install-size="0"
+         version="0.14.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="javax.xml.bind"
+         download-size="0"
+         install-size="0"
+         version="2.1.6.20071219"/>
+
+   <plugin
+         id="org.eclipsetrader.core"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.platform"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.ui"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.ui.application"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.repository.local"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.news"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.platform.doc.isv"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.platform.doc.user"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipsetrader.ui.charts.indicators"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.v201301040902"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.help.appserver"
+         download-size="0"
+         install-size="0"
+         version="3.1.400.v20120521-2344"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.core.variables"
+         download-size="0"
+         install-size="0"
+         version="3.2.600.v20120521-2012"
+         unpack="false"/>
+
+</feature>

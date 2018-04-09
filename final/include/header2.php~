@@ -1,0 +1,18 @@
+<!-- Common Header for our site -->
+<div id="header">
+    <div id="logo">
+        <h1><a href="index.php">JSE 2009</a></h1>
+        <h2><a href="index.php">JUIT Stock Exchange</a><br><br></h2>
+    </div>
+    <!-- end div#logo -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="">Buy</a></li>
+            <li><a href="">Sell</a></li>
+           <li><a href="">Rules</a></li>
+	
+        </ul>
+    </div>
+    <!-- end div#menu -->
+</div>

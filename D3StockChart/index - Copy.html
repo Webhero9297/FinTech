@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta lang="en">
+</head>
+<body>
+<svg width="960" height="500"></svg>
+<script src="d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+  margin = {top: 20, right: 20, bottom: 30, left: 50},
+  width = +svg.attr("width") - margin.left - margin.right,
+  height = +svg.attr("height") - margin.top - margin.bottom,
+  g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var parseTime = d3.timeParse("%H:%M:%S.%L"); 
+
+var x = d3.scaleTime()
+  .range([0, width]); 
+    
+var y = d3.scaleLinear()
+  .range([height, -1]); 
+
+var area = d3.area()
+  .x(function(d) { return x(d.timeStr); })
+  .y0(function(d) { return y(d.bid); })
+  .y1(function(d) { return y(d.ask); })
+  .curve(d3.curveStepAfter);
+
+var area2= d3.area()
+  .x(function(d) { return x(d.timeStr); })
+  .y0(function(d) { return y(d.ask); })
+  .y1(function(d) { return 0; }) 
+  .curve(d3.curveStepAfter);
+
+var area3= d3.area()
+  .x(function(d) { return x(d.timeStr); })
+  .y0(function(d) { return y(d.bid);})
+  .y1(function(d) { return 450; }) 
+  .curve(d3.curveStepAfter);
+
+d3.json("stock.json", function(data) {
+  data.bboList.map(function(d) {
+    d.timeStr = parseTime(d.timeStr);
+    d.bid = d.bid * .0001
+    d.ask = d.ask * .0001
+  });
+
+  y.domain([d3.min(data.bboList, function(d) { return d.bid; }), 
+    d3.max(data.bboList, function(d) { return d.ask; })]);
+
+  x.domain(d3.extent(data.bboList, function(d) { return d.timeStr; }));
+
+  g.append("path")
+    .datum(data.bboList)
+    .attr("fill", "white")
+    .attr("d", area);
+
+  g.append("path")
+    .datum(data.bboList)
+    .attr("fill", "orange")
+    .attr("d", area2);
+
+  g.append("path")
+    .datum(data.bboList)
+    .attr("fill", "green")
+    .attr("d", area3);
+
+  g.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x));
+
+  g.append("g")
+    .call(d3.axisLeft(y))
+    .append("text")
+      .attr("fill", "#000")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", "0.71em")
+      .attr("text-anchor", "end")
+      .text("Price ($)");
+});
+
+</script>
+</body>
+</html>

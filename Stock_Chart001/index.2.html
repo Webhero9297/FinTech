@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>react-stockcharts - Demo</title>
+        <!-- Chart XL - eXceLent Xtra Large charts -->
+    <script src="script1.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react-dom.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/1.1.1/introjs.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body class="carbon">
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div id="app">
+            <div data-reactid=".0">
+                <div data-reactid=".0.0">
+                    <div class="page-container leftnav-hide header-hide" data-reactid=".0.0.1">
+                        <div class="expanded page-mainarea" data-reactid=".0.0.1.1">
+                            <div class="content" data-reactid=".0.0.1.1.0">
+                                <div class="section-body" data-reactid=".0.0.1.1.0.0">
+                                    <div class="full chart-component" data-reactid=".0.0.1.1.0.0.$0">
+                                        <div class="gcrow" data-reactid=".0.0.1.1.0.0.$0.0">
+                                            <div class="chartTypeSelector dropdown" data-intro="Choose a Chart Type, Candlestick, Line, Point &amp; Figure and more " data-reactid=".0.0.1.1.0.0.$0.0.0">
+                                                <button type="button" class="btn btn-default" data-reactid=".0.0.1.1.0.0.$0.0.0.0">
+                                                    <span data-reactid=".0.0.1.1.0.0.$0.0.0.0.0">Renko</span>
+                                                    <span data-reactid=".0.0.1.1.0.0.$0.0.0.0.1"> </span>
+                                                    <span class="caret" data-reactid=".0.0.1.1.0.0.$0.0.0.0.2"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-left" role="menu" data-reactid=".0.0.1.1.0.0.$0.0.0.1">
+                                                    <li class="dropdown-header" data-reactid=".0.0.1.1.0.0.$0.0.0.1.$basicChartTypes">Basic Charts</li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.1"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.1.0">Area</a></li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.2"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.2.0">Line</a></li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.3"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.3.0">Candlestick</a></li>
+                                                    <li class="dropdown-header" data-reactid=".0.0.1.1.0.0.$0.0.0.1.$advancedChartTypes">Advanced Charts</li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.5"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.5.0">Heikin Ashi</a></li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.6"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.6.0">Renko</a></li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.7"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.7.0">Kagi</a></li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.0.1.8"><a href="#" data-reactid=".0.0.1.1.0.0.$0.0.0.1.8.0">Point &amp; Figure</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="indicators" data-intro="add indicators to a chart" data-reactid=".0.0.1.1.0.0.$0.0.1">
+                                                <div class="dropdown" data-reactid=".0.0.1.1.0.0.$0.0.1.0">
+                                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" data-reactid=".0.0.1.1.0.0.$0.0.1.0.0">
+                                                        <span data-reactid=".0.0.1.1.0.0.$0.0.1.0.0.0">Indicators </span>
+                                                        <span class="caret" data-reactid=".0.0.1.1.0.0.$0.0.1.0.0.1"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1">
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$0"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$0.0">Bollinger Bands</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$1"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$1.0">MACD</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$2"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$2.0">Moving Average - Exponential</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$3"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$3.0">Moving Average - Simple</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$4"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$4.0">RSI</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$5"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.1.0.1.$5.0">Stochastics</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="indicators" data-intro="change interactive indicators" data-reactid=".0.0.1.1.0.0.$0.0.2">
+                                                <div class="dropdown" data-reactid=".0.0.1.1.0.0.$0.0.2.0">
+                                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" data-reactid=".0.0.1.1.0.0.$0.0.2.0.0">
+                                                        <span data-reactid=".0.0.1.1.0.0.$0.0.2.0.0.0">Crosshair</span>
+                                                        <span data-reactid=".0.0.1.1.0.0.$0.0.2.0.0.1"> </span>
+                                                        <span class="caret" data-reactid=".0.0.1.1.0.0.$0.0.2.0.0.2"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" data-reactid=".0.0.1.1.0.0.$0.0.2.0.1">
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$0"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$0.0">Crosshair</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$1"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$1.0">TrendLine</a></li>
+                                                        <li data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$2"><a tabindex="-1" href="#" data-reactid=".0.0.1.1.0.0.$0.0.2.0.1.$2.0">Fib Retracement</a></li>
+                                                    </ul>
+                                                    <span class="indicators glyphicon glyphicon-question-sign" title="To remove an indicator drawn, select the type of indicator to remove and then press ctrl + right click  For Trendline - press shift to temporarily disable the snap" data-reactid=".0.0.1.1.0.0.$0.0.2.0.2"></span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-settings btn-group dropdown-menu-right" data-intro="change settings for the chart" data-reactid=".0.0.1.1.0.0.$0.0.3">
+                                                <button type="button" class="btn btn-default" data-reactid=".0.0.1.1.0.0.$0.0.3.0">
+                                                    <span class="glyphicon glyphicon-cog" data-reactid=".0.0.1.1.0.0.$0.0.3.0.0"></span>
+                                                </button>
+                                                <ul class="dropdown-menu chart-settings-menu" data-reactid=".0.0.1.1.0.0.$0.0.3.1">
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.3.1.$0">
+                                                        <div class="clearfix" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$0.0">
+                                                            <span class="pull-left" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$0.0.0">Grid</span>
+                                                            <div class="pull-right" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$0.0.1">
+                                                                <label class="btn btn-success active" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$0.0.1.0">ON</label>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.3.1.$1">
+                                                        <div class="clearfix" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$1.0">
+                                                            <span class="pull-left" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$1.0.0">Another setting here</span>
+                                                        </div>
+                                                    </li>
+                                                    <li data-reactid=".0.0.1.1.0.0.$0.0.3.1.$2">
+                                                        <div class="clearfix" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$2.0">
+                                                            <span class="pull-left" data-reactid=".0.0.1.1.0.0.$0.0.3.1.$2.0.0">Another setting here..</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="shortcut pull-right" data-intro="quickly change the period of the chart" data-position="left" data-reactid=".0.0.1.1.0.0.$0.0.4">
+                                                <ul data-reactid=".0.0.1.1.0.0.$0.0.4.0">
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$10d">10d</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$1m">1m</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$3m">3m</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$6m">6m</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$1y">1y</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$5y">5y</li>
+                                                    <li class="period " data-reactid=".0.0.1.1.0.0.$0.0.4.0.$all">all</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script type="text/javascript" src="dist/scripts/bundle.min.js"></script>
+    
+        
+    
+    </body>
+</html>

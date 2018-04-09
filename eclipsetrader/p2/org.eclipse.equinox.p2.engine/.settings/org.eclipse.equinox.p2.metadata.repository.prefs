@@ -1,0 +1,13 @@
+#Fri Jan 04 09:05:58 CET 2013
+repositories/http\:__eclipsetrader.sourceforge.net_updates/isSystem=false
+repositories/http\:__www.eclipsetrader.org_updates/enabled=false
+repositories/http\:__eclipsetrader.org_updates/count=1
+repositories/http\:__eclipsetrader.sourceforge.net_updates/uri=http\://eclipsetrader.sourceforge.net/updates
+repositories/http\:__eclipsetrader.sourceforge.net_updates/enabled=false
+repositories/http\:__eclipsetrader.org_updates/enabled=true
+repositories/http\:__eclipsetrader.org_updates/isSystem=false
+eclipse.preferences.version=1
+repositories/http\:__eclipsetrader.org_updates/uri=http\://eclipsetrader.org/updates
+repositories/http\:__www.eclipsetrader.org_updates/uri=http\://www.eclipsetrader.org/updates
+repositories/http\:__eclipsetrader.org_updates/nickname=EclipseTrader Updates
+repositories/http\:__www.eclipsetrader.org_updates/isSystem=false
